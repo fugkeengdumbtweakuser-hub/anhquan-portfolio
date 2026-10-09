@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AnhQuan — Personal Portfolio. Student, Developer, Creative Thinker.">
+    <meta name="theme-color" content="#0a0a0f">
+    <title>AnhQuan | Portfolio</title>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="AnhQuan | Portfolio">
+    <meta property="og:description" content="AnhQuan — Personal Portfolio. Student, Developer, Creative Thinker.">
+    <meta property="og:image" content="./assets/avatar.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AnhQuan | Portfolio">
+    <meta name="twitter:description" content="AnhQuan — Personal Portfolio. Student, Developer, Creative Thinker.">
+
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- ============ NAVIGATION ============ -->
+    <nav id="navbar">
+        <div class="container nav-inner">
+            <a href="#" class="logo">AQ</a>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+            <ul class="nav-links" id="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ============ HERO ============ -->
+        <section id="hero" data-animate>
+            <div class="container hero-content">
+                <div class="hero-avatar">
+                    <img id="avatar-img" src="./assets/avatar.png" alt="AnhQuan"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="avatar-fallback">AQ</div>
+                </div>
+                <h1 class="hero-name" id="hero-name"></h1>
+                <p class="hero-tagline" id="hero-tagline"></p>
+                <div class="hero-status" id="hero-status"></div>
+                <div class="hero-cta">
+                    <a href="#about" class="btn btn-primary">About Me</a>
+                    <a href="#" class="btn btn-secondary" id="hero-github-btn" target="_blank" rel="noopener noreferrer">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+                        </svg>
+                        GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ ABOUT ============ -->
+        <section id="about" data-animate>
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text" id="about-text"></div>
+                    <div class="about-details" id="about-details"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============ SKILLS ============ -->
+        <section id="skills" data-animate>
+            <div class="container">
+                <h2 class="section-title">Skills &amp; Tools</h2>
+                <div class="skills-grid" id="skills-grid"></div>
+            </div>
+        </section>
+
+        <!-- ============ PROJECTS ============ -->
+        <section id="projects" data-animate>
+            <div class="container">
+                <h2 class="section-title">Projects</h2>
+                <div class="projects-grid" id="projects-grid"></div>
+            </div>
+        </section>
+
+        <!-- ============ CONTACT ============ -->
+        <section id="contact" data-animate>
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="contact-desc">Hãy liên hệ nếu bạn muốn hợp tác, trao đổi hoặc đơn giản là nói xin chào!</p>
+                <div class="contact-actions">
+                    <button id="copy-email-btn" class="btn btn-primary">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        Copy Email
+                    </button>
+                    <div class="social-links" id="social-links"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer>
+        <div class="container">
+            <p class="copyright">&copy; <span id="footer-year"></span> AnhQuan. All rights reserved.</p>
+            <p class="footer-tagline" id="footer-tagline"></p>
+        </div>
+    </footer>
+
+    <script src="./script.js" defer></script>
+</body>
+</html>
